@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// 👉 Add your images to Assets/Projects and update these imports
+import safety from "../../Assets/Projects/safety.png";
+import trip from "../../Assets/Projects/trip.png";
+import todo from "../../Assets/Projects/todo.jpg";
+import cloud from "../../Assets/Projects/cloud.jpg";
 
 function Projects() {
   return (
@@ -18,75 +18,59 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I&apos;ve worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          {/* 🚀 Safety App */}
+        <Col md={4} className="project-card">
+          <ProjectCard
+            imgPath={safety}
+            isBlog={false}
+            title="Safety App"
+            description="A personal safety application that enables quick SOS alerts, live location sharing, and instant notifications to pre-configured emergency contacts. Built with React frontend and a robust backend, integrated with real-time location APIs and containerized with Docker."
+            ghLink="https://github.com/yourusername/safety-app"
+            demoLink="https://your-safety-app-demo-link.com"
+            imgStyle={{ width: "80%", height: "30%" }} // 👈 Add this prop if ProjectCard supports it
+          />
+        </Col>
+
+          {/* 🤖 AI Trip Planner */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={trip}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="AI Trip Planner"
+              description="An AI-powered trip planning web app built using Streamlit and Python. It generates optimized travel itineraries, suggests destinations, and integrates with maps and external APIs to make travel planning easier and smarter."
+              ghLink="https://github.com/Kx-Bytes/Traveezy-AI-Travel-App"
+              demoLink="https://your-ai-trip-planner-demo.com"
             />
           </Col>
 
+          {/* ☁️ Cloud Image Duplication */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={cloud}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Cloud Image Duplication"
+              description="A cloud-based system that detects and removes duplicate images in storage to save space and optimize usage. Built with scalable backend services, image hashing algorithms, and integrated with cloud storage APIs."
+              ghLink="https://github.com/Kx-Bytes/cloud"
+              demoLink="https://your-cloud-image-duplication-demo.com"
             />
           </Col>
 
+          {/* ✅ ToDo DevOps Project */}
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={todo}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="ToDo DevOps Project"
+              description="A full-stack ToDo List API built with Java Spring Boot and a React frontend. Fully Dockerized and integrated with a complete CI/CD pipeline using Jenkins, Maven, JUnit, and Ansible/Terraform. Includes Graphite and Grafana monitoring."
+              ghLink="https://github.com/Kx-Bytes/todo-java-app"
+              demoLink="https://your-todo-devops-demo.com"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
