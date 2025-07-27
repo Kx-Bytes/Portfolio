@@ -1,14 +1,7 @@
 <h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://your-deployment-link.com" target="_blank">kiranbiju.tech</a>
+  Portfolio Website<br/>
+  <a href="https://your-deployment-link.com" target="_blank">Go to Website</a>
 </h2>
-
-<h3 align="center">
-    🔹
-    <a href="https://github.com/Kx-Bytes/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/Kx-Bytes/Portfolio/issues">Request Feature</a>
-</h3>
 
 ## Built With
 
