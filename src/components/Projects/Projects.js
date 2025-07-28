@@ -28,7 +28,7 @@ function Projects() {
             isBlog={false}
             title="Safety App"
             description="A personal safety application that enables quick SOS alerts, live location sharing, and instant notifications to pre-configured emergency contacts. Built with React frontend and a robust backend, integrated with real-time location APIs and containerized with Docker."
-            ghLink="https://github.com/yourusername/safety-app"
+            ghLink="https://github.com/Kx-Bytes/TrustMap"
             demoLink="https://your-safety-app-demo-link.com"
             imgStyle={{ width: "80%", height: "30%" }} // 👈 Add this prop if ProjectCard supports it
           />
